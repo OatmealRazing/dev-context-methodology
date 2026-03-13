@@ -40,6 +40,7 @@ Ask the user to confirm the transition before making any changes.
 **Step 7: Update CONTEXT.md**
 - Change `stage` frontmatter value to the new stage
 - Update `updated` date
+- If resuming from Paused, remove the `paused_from` frontmatter field
 - Keep the completed gate checklist as historical record under a "Completed Gates" section
 - Append the new stage's gate checklist under "Stage Gate: <New Stage>"
 

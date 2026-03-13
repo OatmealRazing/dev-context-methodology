@@ -12,7 +12,7 @@ description: Use when the user wants cross-project analysis, bottleneck identifi
 3. Read the following files for all projects (extract structured fields only):
    - `<tracker-root>/projects/*/CONTEXT.md` (name, stage, stage history with dates, priority)
    - `<tracker-root>/projects/*/metrics.md` (cycle times, throughput, any recorded stage durations)
-   - `<tracker-root>/projects/*/incidents.md` (incident date, type, severity, prevention suggestion)
+   - `<tracker-root>/projects/*/incidents.md` (incident date, type, prevention suggestion)
    - `<tracker-root>/projects/*/sprints/*.md` (sprint dates, planned count, completed count, carry-over count)
 
 4. Generate bottleneck analysis:

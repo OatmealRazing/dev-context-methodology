@@ -53,6 +53,8 @@ Copy the following templates from the plugin's `core/templates/` directory to `<
 - `sprint.md`
 - `retrospective.md`
 - `context.md`
+- `incidents.md`
+- `project-claude.md`
 
 Generate `<tracker-root>/CONTEXT.md` as a navigation file pointing to `overview.md` and the `projects/` directory.
 

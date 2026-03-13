@@ -18,15 +18,14 @@ description: Use when the user asks what to work on next, needs project recommen
    - stage
    - priority
    - last updated date
-   - blocked-by (list)
-   - blocks (list)
+   - dependencies (list of project names this project depends on)
    - open to-dos (list)
 
 6. Read each active project's `incidents.md` and its most recent sprint file (latest file in `sprints/` by filename). Extract only structured fields (incident dates, types, carry-over item counts).
 
 7. Score each project using the following factors, evaluated in order:
 
-   - **Blockers first**: if a project's `blocks` list is non-empty, other projects are waiting on it. Assign top priority tier.
+   - **Blockers first**: if other projects list this project in their `dependencies`, those projects are waiting on it. Assign top priority tier.
    - **Priority weight**: high = 300 points, medium = 200 points, low = 100 points.
    - **Staleness flag**: if a project has not been updated in 14 or more days, flag it as stale.
    - **Stage momentum**: prefer projects that are mid-stage (some items done, some remaining) over projects at a stage boundary (just entered or just completed all items).
@@ -37,7 +36,7 @@ description: Use when the user asks what to work on next, needs project recommen
 
 8. Present the top 2-3 recommendations with reasoning for each and a specific next action the user can take.
 
-9. Include a status table of all active projects with columns: name, stage, priority, last updated, blocked-by.
+9. Include a status table of all active projects with columns: name, stage, priority, last updated, dependencies.
 
 10. List all open to-dos grouped by project.
 

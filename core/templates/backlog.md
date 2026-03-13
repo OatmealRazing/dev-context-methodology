@@ -1,5 +1,5 @@
 ---
-last_refined: {{DATE}}
+updated: {{DATE}}
 item_count: 0
 ready_count: 0
 ---

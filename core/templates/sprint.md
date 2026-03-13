@@ -2,8 +2,8 @@
 sprint: {{SPRINT_NUMBER}}
 goal: "{{SPRINT_GOAL}}"
 status: active
-started: {{DATE}}
-ends: {{END_DATE}}
+start_date: {{DATE}}
+end_date: {{END_DATE}}
 ---
 
 ## Goal
