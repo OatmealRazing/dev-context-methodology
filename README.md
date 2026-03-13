@@ -5,7 +5,7 @@ A Claude Code plugin for structured project lifecycle management. Provides conte
 ## Install
 
 ```
-claude plugin add github:alexshrk/dev-context-methodology
+claude plugin add github:OatmealRazing/dev-context-methodology
 ```
 
 ## Quick Start
