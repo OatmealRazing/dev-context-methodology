@@ -7,7 +7,7 @@ description: Use when the user asks what to work on next, needs project recommen
 
 1. Resolve tracker root: read `.dev-context/config.md` if present and extract `tracker_root`. If the file is absent or the field is missing, default to `.tracker/`.
 
-2. Validate that the resolved tracker root path stays within the workspace root. If the path contains `..` segments that escape the workspace root, abort and report an error.
+2. Validate that the resolved tracker root path stays within workspace root (path traversal protection). If the path contains `..` segments that escape the workspace root, abort and report an error.
 
 3. Read all files matching `<tracker-root>/projects/*/CONTEXT.md`.
 
