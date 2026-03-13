@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Project lifecycle tracking and context management using the Dev Context Methodology (DCM)",
   "author": {
-    "name": "Alex"
+    "name": "Alex Shaddy"
   },
   "license": "MIT",
   "keywords": ["dcm", "project-management", "context", "lifecycle", "tracker"],

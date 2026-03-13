@@ -13,7 +13,7 @@ description: Use when the user wants to run a sprint retrospective, review what 
 
 4. Read `<tracker-root>/projects/<name>/CONTEXT.md`.
 
-5. Find the most recently completed sprint by listing files in `<tracker-root>/projects/<name>/sprints/` and selecting the file with the latest name (sprints are named sequentially, e.g., `sprint-001.md`).
+5. Find the most recently completed sprint by listing files in `<tracker-root>/projects/<name>/sprints/` and selecting the file with the latest name (sprints are named sequentially, e.g., `sprint-001.md`). Read the sprint file and check the `status` frontmatter field. If the status is `active` (not `completed`), warn the user that this sprint is still active and ask whether to proceed with the retro anyway or close the sprint first via `/track-sprint close`.
 
 6. Read the sprint record. Extract:
    - Sprint number and date range

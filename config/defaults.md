@@ -9,6 +9,14 @@
 
 All paths are relative to workspace root. The tracker root can be overridden in `.dev-context/config.md`.
 
+## Backlog Frontmatter Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `item_count` | int | Total number of items ever added to the backlog. Incremented on add and sprint carry-over. Never decremented. |
+| `ready_count` | int | Number of items marked complete (`[x]`). Incremented when items are completed. Never decremented. |
+| `last_refined` | date | Date of last backlog modification. |
+
 ## Overridable Config
 
 The following files are copied to `.dev-context/` during init. Users edit their copies; plugin defaults remain untouched.

@@ -102,6 +102,6 @@ Estimation scale reference:
 - **Carried over**: list of incomplete planned items
 ```
 
-5. Move incomplete planned items back to `<tracker-root>/projects/<name>/backlog.md`. Add them at the top of the backlog under a `Carried Over` note, or merge into existing backlog sections as appropriate.
+5. Move incomplete planned items back to `<tracker-root>/projects/<name>/backlog.md`. Add them at the top of the backlog under a `Carried Over` note, or merge into existing backlog sections as appropriate. Increment `item_count` in the backlog frontmatter by the number of carried-over items.
 6. Ask: "Run a retrospective now? (`/track-retro <name>`)"
 7. Confirm: report sprint number, completion ratio, and any carried-over items.

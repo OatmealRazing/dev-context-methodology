@@ -59,7 +59,7 @@ Copy the gate checklist from the stage contract at `<tracker-root>/templates/sta
 
 **Step 5: Set up project source directory**
 In the project source directory:
-- Create `CLAUDE.md` using the template at `<tracker-root>/../_templates/project-claude.md` if it exists, otherwise generate a minimal one with the project name and description
+- Create `CLAUDE.md` using the template at `<tracker-root>/templates/project-claude.md` if it exists, otherwise generate a minimal one with the project name and description
 - Create `.context/sessions/` directory
 
 **Step 6: Run `/track-refresh`** to rebuild the overview dashboard.

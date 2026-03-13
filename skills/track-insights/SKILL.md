@@ -25,7 +25,7 @@ description: Use when the user wants cross-project analysis, bottleneck identifi
    - Recurring patterns: identify clusters of the same incident type or repeated prevention suggestions across projects.
    - Recent incidents: list all incidents from the last 14 days across all projects.
 
-6. Write the following report files to `<tracker-root>/insights/`. Use today's date in `YYYY-MM-DD` format for the filename prefix:
+6. Ensure the `<tracker-root>/insights/` directory exists before writing. Create it if it does not exist. Write the following report files to `<tracker-root>/insights/`. Use today's date in `YYYY-MM-DD` format for the filename prefix:
    - `YYYY-MM-DD-bottlenecks.md` containing the bottleneck analysis.
    - `YYYY-MM-DD-incidents.md` containing the incident analysis.
 

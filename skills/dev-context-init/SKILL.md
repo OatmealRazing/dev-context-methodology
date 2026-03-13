@@ -46,7 +46,7 @@ Create the following tracker directory structure:
 - `<tracker-root>/projects/`
 - `<tracker-root>/insights/`
 
-Copy stage contracts from the plugin's `core/templates/stage-contracts/` directory to `<tracker-root>/templates/stage-contracts/`.
+Copy stage contracts from the plugin's `core/templates/stage-contracts/` directory to `<tracker-root>/templates/stage-contracts/`. These are frozen copies -- they will not auto-update when the plugin is updated. To apply updated gate criteria later, manually re-copy from the plugin's `core/templates/stage-contracts/` or re-run init.
 
 Copy the following templates from the plugin's `core/templates/` directory to `<tracker-root>/templates/`:
 - `backlog.md`
@@ -56,7 +56,7 @@ Copy the following templates from the plugin's `core/templates/` directory to `<
 
 Generate `<tracker-root>/CONTEXT.md` as a navigation file pointing to `overview.md` and the `projects/` directory.
 
-Generate an empty `<tracker-root>/overview.md`.
+Generate `<tracker-root>/overview.md` with a heading and a note that no projects are tracked yet. Suggest running `/track-new` to onboard the first project.
 
 Generate a workspace `CLAUDE.md` from the plugin's `core/templates/workspace-claude.md`. Interpolate the following values from user answers:
 - Workspace name (derived from workspace root directory name)

@@ -27,6 +27,6 @@ If a project name was passed as an argument:
 If no argument was provided:
 - Read `<tracker-root>/overview.md`
 - Display its full contents
-- If `overview.md` does not exist, tell the user and suggest running `/track-refresh`
+- If `overview.md` does not exist or is empty, tell the user no projects are tracked yet and suggest running `/track-new` to onboard a project or `/track-refresh` to rebuild the dashboard
 
 **Step 3: Display only -- make no writes.**

@@ -19,9 +19,11 @@ Standard order: Idea > Planning > Setup > Developing > Shipping > Maintaining
 
 Special transitions available from any stage: Paused, Archived
 
-If the project is currently Paused, ask whether to resume (restore to previous stage) or archive.
+If the project is currently Paused, read the `paused_from` field in CONTEXT.md frontmatter to determine the previous stage. Ask whether to resume (restore to that stage) or archive.
 
-If the user wants to transition to Paused or Archived: ask for a reason and record it in CONTEXT.md under a "Pause/Archive Notes" section.
+If the user wants to transition to Paused: ask for a reason, record the current stage in the `paused_from` frontmatter field, and add the reason in CONTEXT.md under a "Pause/Archive Notes" section.
+
+If the user wants to transition to Archived: ask for a reason and record it in CONTEXT.md under a "Pause/Archive Notes" section.
 
 **Step 5: Check gate criteria**
 Read the stage contract for the current stage from `<tracker-root>/templates/stage-contracts/`. File naming convention: `01-idea.md`, `02-planning.md`, `03-setup.md`, `04-developing.md`, `05-shipping.md`, `06-maintaining.md`.

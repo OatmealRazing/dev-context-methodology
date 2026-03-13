@@ -31,7 +31,7 @@ Append the item to the appropriate MoSCoW section in `<tracker-root>/projects/<n
 Update the `item_count` in the backlog frontmatter (increment by 1).
 
 **For `complete`:**
-Read `<tracker-root>/projects/<name>/backlog.md` and display all unchecked items with their index/position. Let the user select one or more items to mark done. Change `- [ ]` to `- [x]` for selected items. Update `item_count` and `ready_count` in frontmatter accordingly.
+Read `<tracker-root>/projects/<name>/backlog.md` and display all unchecked items with their index/position. Let the user select one or more items to mark done. Change `- [ ]` to `- [x]` for selected items. Increment `ready_count` in frontmatter by the number of items completed. Do not modify `item_count` (it tracks total items, not remaining).
 
 **For `list`:**
 Read `<tracker-root>/projects/<name>/backlog.md` and display all items grouped by MoSCoW priority. Show counts: total items per section, completed vs remaining. No writes.
