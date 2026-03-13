@@ -6,22 +6,5 @@
     "name": "Alex Shaddy"
   },
   "license": "MIT",
-  "keywords": ["dcm", "project-management", "context", "lifecycle", "tracker"],
-  "commands": [
-    { "name": "track-new", "description": "Onboard a new project to the tracker", "file": "commands/track-new.md" },
-    { "name": "track-status", "description": "Show status for one or all tracked projects", "file": "commands/track-status.md" },
-    { "name": "track-advance", "description": "Advance a project to its next lifecycle stage", "file": "commands/track-advance.md" },
-    { "name": "track-todo", "description": "Add, complete, or list backlog items for a project", "file": "commands/track-todo.md" },
-    { "name": "track-update", "description": "Quick updates to a project's tracker files", "file": "commands/track-update.md" },
-    { "name": "track-refresh", "description": "Rebuild the overview dashboard from all project tracker files", "file": "commands/track-refresh.md" },
-    { "name": "track-incident", "description": "Log an incident to a project's incident log", "file": "commands/track-incident.md" },
-    { "name": "track-sprint", "description": "Create, close, or show sprint status for a project", "file": "commands/track-sprint.md" },
-    { "name": "track-metrics", "description": "Generate or show project metrics from stage history, sprints, and incidents", "file": "commands/track-metrics.md" }
-  ],
-  "skills": [
-    { "name": "dev-context-init", "description": "Use when setting up a new workspace with Dev Context Methodology, or when the user asks to initialize DCM tracking in their workspace", "file": "skills/dev-context-init/SKILL.md" },
-    { "name": "track-suggest", "description": "Use when the user asks what to work on next, needs project recommendations, or wants to prioritize their backlog across projects", "file": "skills/track-suggest/SKILL.md" },
-    { "name": "track-insights", "description": "Use when the user wants cross-project analysis, bottleneck identification, or incident pattern reports across all tracked projects", "file": "skills/track-insights/SKILL.md" },
-    { "name": "track-retro", "description": "Use when the user wants to run a sprint retrospective, review what worked and what didn't, or extract process improvements from recent work", "file": "skills/track-retro/SKILL.md" }
-  ]
+  "keywords": ["dcm", "project-management", "context", "lifecycle", "tracker"]
 }
