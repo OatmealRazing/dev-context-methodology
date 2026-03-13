@@ -8,6 +8,9 @@ Advance a tracked project to its next lifecycle stage.
 **Step 1: Resolve tracker root**
 Read `.dev-context/config.md` if it exists and extract the tracker root path. If not present, use `.tracker/`. Validate that the resolved tracker root path resolves within the workspace root -- reject if it contains `..` segments or resolves outside the workspace. This is path traversal protection.
 
+**Step 1b: Verify templates exist**
+Check that `<tracker-root>/templates/stage-contracts/` exists and contains at least one `.md` file. If the directory is missing or empty, automatically copy all templates from the plugin's `core/templates/` directory to `<tracker-root>/templates/` (including the `stage-contracts/` subdirectory). Inform the user: "Templates were missing — copied from plugin. Consider running `/dev-context-init` if this is a fresh workspace."
+
 **Step 2: Validate project name**
 Validate the name matches `[a-z0-9-]` only. Reject any name containing path separators (`/`, `\`), `..`, spaces, or uppercase letters.
 

@@ -8,6 +8,9 @@ Onboard a new project to the tracker.
 **Step 1: Resolve tracker root**
 Read `.dev-context/config.md` if it exists and extract the tracker root path. If the file does not exist or no tracker root is specified, use `.tracker/`. Validate that the resolved tracker root path does not escape the workspace root -- it must resolve to a path within the workspace root. Reject if it contains `..` segments or resolves outside the workspace.
 
+**Step 1b: Verify templates exist**
+Check that `<tracker-root>/templates/stage-contracts/` exists and contains at least one `.md` file. If the directory is missing or empty, automatically copy all templates from the plugin's `core/templates/` directory to `<tracker-root>/templates/` (including the `stage-contracts/` subdirectory). Inform the user: "Templates were missing — copied from plugin. Consider running `/dev-context-init` if this is a fresh workspace."
+
 **Step 2: Get project name**
 If a project name was passed as an argument, use it. Otherwise ask the user for a project name.
 
