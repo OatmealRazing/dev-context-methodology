@@ -4,8 +4,11 @@ A Claude Code plugin for structured project lifecycle management. Provides conte
 
 ## Install
 
-```
-claude plugin add github:OatmealRazing/dev-context-methodology
+Add the marketplace, then install the plugin:
+
+```bash
+claude plugin marketplace add OatmealRazing/oatmealrazing-plugins
+claude plugin install dev-context-methodology
 ```
 
 ## Quick Start
