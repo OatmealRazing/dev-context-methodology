@@ -1,0 +1,11 @@
+# {{PROJECT_NAME}}
+
+## Overview
+{{ONE_LINE_DESCRIPTION}}
+
+## Development
+{{BUILD_COMMANDS}}
+{{TEST_COMMANDS}}
+
+## Architecture
+{{KEY_FILES_AND_RESPONSIBILITIES}}
